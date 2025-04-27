@@ -1,0 +1,1310 @@
+[
+  {
+    "id": 1,
+    "nome": "Rabanete da Baía",
+    "estilo": "Ligeiro",
+    "descricao": "Sem efeito adicional. Um rabanete selvagem caracterizado por sua raiz bulbosa e branca. Firme, crocante e suave. Amoleça as folhas deixando-as no vinagre ou refogando-as antes de comê-las",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Gaultéria Costeira",
+    "estilo": "Ligeiro",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba (1) Revigorado. A fruta em si é mentolada, picante ou doce, dependendo do cultivo. As folhas secas fazem um chá de ervas energizante.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 3,
+    "nome": "Pratanguejo",
+    "estilo": "Poderoso",
+    "descricao": "Recupera (1) de Durabilidade. Sakpang, ou pratanguejos, regeneram seus membros com relativa facilidade. A garra, a parte mais carnuda, é suculenta e macia.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 4,
+    "nome": "Verme",
+    "estilo": "Poderoso",
+    "descricao": "Receba FAMINTO. Os povos Sen não têm um nome mais específico para eles. São simplesmente os vermes — incontáveis, permutáveis e famintos.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 6,
+    "nome": "Alga Noturna",
+    "estilo": "Preciso",
+    "descricao": "Receba Escondido. Esta alga comestível cresce em folhas escuras e delicadas ao longo de rochas de maré. Seque e pressione para fazer biscoitos finos, ou, depois de seca, triture como um tempero crocante e salgado.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 7,
+    "nome": "",
+    "estilo": "Sagaz",
+    "descricao": "",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Baiacu-do-lodo Menor",
+        "descricao": "Receba (1) Envenenado. Assim como seu primo gigantesco, o yudoubu, o baiacu-do-lodo menor é tóxico. Preparada incorretamente, sua carne causa paralisia e asfixia"
+      },
+      "acima_5": {
+        "nome": "Goby Gueirabença",
+        "descricao": "Raro. Se a refeição recuperar 8+ de Vigor, receba NADAR (1). Formando cardumes onde água doce e salgada se encontram, esses peixes resistentes são hábeis em navegar por todos os ambientes aquáticos."
+      }
+    }
+  },
+  {
+    "id": 8,
+    "nome": "Lulesguicho",
+    "estilo": "Ligeiro",
+    "descricao": "Se a refeição recuperar 8+ Vigor, receba VOAR (1) ou NADAR (1). ◆ Cardumes de pequenas lulas saltam sobre as ondas, voando curtas distâncias por meio da propulsão aquática. Um alimento leve e borrachudo para humanos e monstros.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 9,
+    "nome": "Algaspuma",
+    "estilo": "Poderoso",
+    "descricao": "Remova (1) Envenenado. ◆ Use os brotos mais jovens para salada e faça conservas com o restante. Seus bulbos contêm um gel antibacteriano que é mais útil quando cozinhado para um lanche de emergência.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 10,
+    "nome": "Conchaspinho",
+    "estilo": "Poderoso",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba NÃO-ME-TOQUE (1) .◆ Manadas de conchaspinhos pastam na algaspuma, deixando áreas subaquáticas áridas se não forem controladas. Os órgãos reprodutivos comestíveis têm uma textura semelhante à do patê",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 11,
+    "nome": "Enguia condutora",
+    "estilo": "Preciso",
+    "descricao": "Raro. Receba CHOQUE ELÉTRICO ou (+1) em CURA. ◆ Cores vibrantes e sabor eletrizante. Sua habilidade de mudar de sexo o torna útil para terapias hormonais.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 12,
+    "nome": "Portigumelo",
+    "estilo": "Ligeiro",
+    "descricao": "Raro. Remova (1) Convalescente. ◆ Um cogumelo estranho e sem gosto, encontrado apenas perto de pórticos. Tem pouco efeito sobre os humanos, mas enche os monstros de vigor sobrenatural.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 13,
+    "nome": "",
+    "estilo": "Poderoso",
+    "descricao": "",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem_8": {
+      "tem_variacao": true,
+      "abaixo_8": {
+        "nome": "Pratanguejo",
+        "descricao": "Recupera (1) em Durabilidade. ◆ Sakpang, ou pratanguejos, regeneram seus membros com relativa facilidade. A garra, a parte mais carnuda, é suculenta e macia."
+      },
+      "acima_8": {
+        "nome": "Vermenídeo",
+        "descricao": "Raro. Receba (+1) GOLPEAR. ◆ Os maiores vermes passam a vida toda lutando para devorar seus rivais."
+      }
+    }
+  },
+  {
+    "id": 14,
+    "nome": "Geleca de Onagung",
+    "estilo": "Ligeiro",
+    "descricao": "Se a refeição recuperar 8+ de Vigor, receba ESCORREGADIO. ◆ A maioria dos Onagungs recém- nascidos morre em poucos dias. Monstros selvagens são rápidos em abocanhá-los, então você deve ter pés leves para colhê-los.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 15,
+    "nome": "Comida de Rua",
+    "estilo": "Ligeiro",
+    "descricao": "Você recebe um Lanche que recupera [A] Vigor e não tem efeito adicional.",
+    "tracos": [
+      5
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 16,
+    "nome": "Compra no Atacado",
+    "estilo": "Poderoso",
+    "descricao": "Você recebe [A] × 2 de seu Ingrediente Típico (ou um Ingrediente diferente que consiga descrever).",
+    "tracos": [
+      5
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 18,
+    "nome": "Compra Planejada",
+    "estilo": "Preciso",
+    "descricao": "Você recebe [A] porções de qualquer ingrediente que tenha encontrado antes",
+    "tracos": [
+      5
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 19,
+    "nome": "Temperos Roubados",
+    "estilo": "Sagaz",
+    "descricao": "Você recebe [A] de seu Tempero Típico (ou um Tempero diferente que consiga descrever).",
+    "tracos": [
+      5
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 20,
+    "nome": "Mantevejo",
+    "estilo": "Poderoso",
+    "descricao": "Raro. Se a refeição recupera 8+ Vigor, receba ROBUSTO. ◆ Na ausência de vermes, outras espécies podem prosperar. Os prisioneiros coletam esses artrópodes gordos para vendê-los como iguarias de luxo.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 21,
+    "nome": "Relvalga",
+    "estilo": "Preciso",
+    "descricao": "Raro. Se a refeição recupera 8+ Vigor, receba ROBUSTO. ◆ Na ausência de vermes, outras espécies podem prosperar. Os prisioneiros coletam esses artrópodes gordos para vendê-los como iguarias de luxo.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 22,
+    "nome": "Ovo de Katang",
+    "estilo": "Sagaz",
+    "descricao": "Raro. Receba (+1) em CHAMAR ou, se a refeição recuperar 8+ Vigor, VOAR (1).◆ Colônias de katang estridentes fazem ninhos ao longo de falésias oceânicas, fora do alcance da maioria dos predadores. Seus gritos e seu fedor são detectáveis por muitos quilômetros.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 23,
+    "nome": "Wooda Selvagem",
+    "estilo": "Poderoso",
+    "descricao": "Remova (1) Fadigado ou, se a refeição recuperar 8+ Vigor, receba VELOCIDADE. ◆ Wooda fornece lã, laticínios e carne para sociedades em toda a Terra Una. Um único abate pode se transformar em muitas porções.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 24,
+    "nome": "",
+    "estilo": "Preciso",
+    "descricao": "",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Arroz Difuso",
+        "descricao": "Sem efeito adicional. ◆ Os reis verdes fizeram experiências intensas com todas as espécies de arroz da Costa Sen. O arroz difuso tem sabor mais parecido com nozes e é mais mastigável do que outras variedades."
+      },
+      "acima_5": {
+        "nome": "Repolho Wun",
+        "descricao": "Raro. Receba CAMUFLAGEM. ◆ A colheita especial do Clã Wun é difícil de detectar. Seus cantores o fritam com capim-cebola antes de embarcar em operações clandestinas."
+      }
+    }
+  },
+  {
+    "id": 25,
+    "nome": "Peixe-bobo Marinho",
+    "estilo": "Poderoso",
+    "descricao": "Raro. Receba (1) Confuso ou, se a refeição recuperar 20+ Vigor, (+1) em PODEROSO. ◆ Esta criatura flutua placidamente pelos oceanos do sul. Marinheiros zombam dele por não ter defesas naturais, mas ele até que se vira bem.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 26,
+    "nome": "Nedou Xie",
+    "estilo": "Preciso",
+    "descricao": "Raro. Se a refeição recuperar 10+ de Vigor, remova (1) Ferido. ◆ Essas delicadas águas-vivas nunca morrem de velhice. Restam poucos dos recifes nos quais se reproduzem, pois caçadores clandestinos os ceifaram até a destruição completa.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 27,
+    "nome": "Camarão-Sabão",
+    "estilo": "Ligeiro",
+    "descricao": "Receba ESCAVAR (1) ou NADAR (1). ◆ Encontrado abundantemente durante a maré baixa. Pegue-os aos punhados e reserve bastante tempo para limpá-los e descascá-los.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 28,
+    "nome": "",
+    "estilo": "Poderoso",
+    "descricao": "",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Verme",
+        "descricao": "Recupera (1) em Durabilidade. ◆ Sakpang, ou pratanguejos, regeneram seus membros com relativa facilidade. A garra, a parte mais carnuda, é suculenta e macia."
+      },
+      "acima_5": {
+        "nome": "Ostra Real",
+        "descricao": "Se a refeição recuperar 8+ Vigor, receba ARMADURA NATURAL. ◆ Enormes ostras aglomeram-se ao redor das piscinas naturais, alimentando-se de plâncton durante a maré alta. Até mesmo os monstros acham suas conchas difíceis de abrir."
+      }
+    }
+  },
+  {
+    "id": 29,
+    "nome": "",
+    "estilo": "Poderoso",
+    "descricao": "",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Pratanguejo",
+        "descricao": "Recupera (1) em Durabilidade. ◆ Sakpang, ou pratanguejos, regeneram seus membros com relativa facilidade. A garra, a parte mais carnuda, é suculenta e macia"
+      },
+      "acima_5": {
+        "nome": "Ostra Real",
+        "descricao": "Se a refeição recuperar 8+ Vigor, receba ARMADURA NATURAL. ◆ Enormes ostras aglomeram-se ao redor das piscinas naturais, alimentando-se de plâncton durante a maré alta. Até mesmo os monstros acham suas conchas difíceis de abrir."
+      }
+    }
+  },
+  {
+    "id": 30,
+    "nome": "Néctar de Flor-de-mar",
+    "estilo": "Preciso",
+    "descricao": "Se a refeição recuperar 4+ Vigor, receba (+1) em EXIBIR. ◆ Flores endêmicas só crescem se a areia se mover um pouco ao redor de suas raízes. Suas pétalas têm uma belíssima padronagem e funcionam bem como guarnição",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 31,
+    "nome": "Erva-sal desidratada",
+    "estilo": "Sagaz",
+    "descricao": "Tempero. Receba INCANSÁVEL. ◆ A planta não é comestível, mas as folhas podem ser secas e transformadas em um sal. Dizem que refeições temperadas com ela dão a força do próprio oceano.",
+    "tracos": [
+      1
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 32,
+    "nome": "Arroz Arbóreo",
+    "estilo": "Ligeiro",
+    "descricao": "Sem efeito adicional. Criado para sobreviver em condições áridas, o arroz arbóreo pende dos galhos de árvores em folhas. O grão é pequeno e grudento em comparação a outros tipos de arroz.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 33,
+    "nome": "Verme",
+    "estilo": "Ligeiro",
+    "descricao": "Receba FAMINTO. Os povos Sen não têm um nome mais específico para eles. São simplesmente os vermes — incontáveis, permutáveis e famintos.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 34,
+    "nome": "Asaginga",
+    "estilo": "Poderoso",
+    "descricao": "Receba (1) Fadigado. Este monstro aviário não voa, é noturno e invasivo. Sua carne é um tanto seca e magra, e muitas vezes deixa as pessoas sonolentas",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 35,
+    "nome": "",
+    "estilo": "Preciso",
+    "descricao": "",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Vertigumelo",
+        "descricao": "Marcante. Receba (1) Confuso. Este cogumelo inebriante tem um sabor forte e terroso. Cozinhá-lo com temperos fortes pode suavizar seu efeito psicodélico."
+      },
+      "acima_5": {
+        "nome": "Cogumelo Olho-de-siri",
+        "descricao": "Recupera (1) Durabilidade. Eles crescem na base das árvores, imitando os caules em formato de olhos dos raizanguejo. Eles podem ser colhidos com segurança se crescerem em grupos de três ou mais."
+      }
+    }
+  },
+  {
+    "id": 36,
+    "nome": "Lapuni Selvagem",
+    "estilo": "Sagaz",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba (+1) em PROCURAR ou ESCAVAR (1). Os lapunis de orelhas caídas são onipresentes em todo o Bosque Retorcido. Com frequência, enterram-se sob as raízes para escapar das queimadas.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 37,
+    "nome": "",
+    "estilo": "Ligeiro",
+    "descricao": "",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Arroz Arbóreo",
+        "descricao": "Sem efeito adicional. ◆ Criado para sobreviver em condições áridas, o arroz arbóreo pende dos galhos de árvores em folhas. O grão é pequeno e grudento em comparação a outros tipos de arroz."
+      },
+      "acima_5": {
+        "nome": "Ovo de Wari",
+        "descricao": "Se a refeição recuperar 8+ de Vigor, receba (+1) em PROCURAR ou (+1) em ATRAVESSAR. ◆ Os antigos criavam waris semelhantes a pombos como sua principal avicultura, e a população selvagem espalhou-se nos quatro cantos do continente"
+      }
+    }
+  },
+  {
+    "id": 38,
+    "nome": "",
+    "estilo": "Ligeiro",
+    "descricao": "",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Verme",
+        "descricao": "Receba FAMINTO. ◆ Os povos Sen não têm um nome mais específico para eles. São simplesmente os vermes — incontáveis, permutáveis e famintos"
+      },
+      "acima_5": {
+        "nome": "Ovo de Wari",
+        "descricao": "Se a refeição recuperar 8+ de Vigor, receba (+1) em PROCURAR ou (+1) em ATRAVESSAR. ◆ Os antigos criavam waris semelhantes a pombos como sua principal avicultura, e a população selvagem espalhou-se nos quatro cantos do continente"
+      }
+    }
+  },
+  {
+    "id": 39,
+    "nome": "Brasanguejo",
+    "estilo": "Poderoso",
+    "descricao": "Receba (+1) em ASSEGURAR ou recupere (1) de Durabilidade. ◆ As luzes em seus cascos piscam lentamente enquanto eles retiram carne de corpos queimados. O piscar torna-se rápido e arrítmico quando estão agitados.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 40,
+    "nome": "Videiraçúcar",
+    "estilo": "Poderoso",
+    "descricao": "Tempero. Se a refeição recuperar 4+ Vigor, receba ESCALAR (1). ◆ Uma vez moída, produz um açúcar branco de alta qualidade. Os reis verdes dedicaram plantações inteiras à videiraçúcar num passado distante.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 41,
+    "nome": "Cerejasca",
+    "estilo": "Poderoso",
+    "descricao": "Se a refeição recuperar 4+ Vigor, remova (1) Amedrontado. ◆◆ Embora a casca seja espinhosa e áspera, também é bem fina, e a polpa interna é doce e suculenta. Dizem que comer cerejasca faz você se sentir protegido e seguro.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 42,
+    "nome": "Cobragulhas",
+    "estilo": "Sagaz",
+    "descricao": "Raro. Receba ENGOLIR INTEIRO ou VENENO (1). ◆◆ Embora suas cabeças pareçam estreitas, as cobragulhas têm uma boca enorme quando abrem totalmente suas mandíbulas.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 43,
+    "nome": "Casca de Espiralárvore",
+    "estilo": "Ligeiro",
+    "descricao": "Tempero. Receba REGENERAÇÃO (1). ◆ Um gosto adstringente do qual se aprende a gostar. Frequentemente usado em chás medicinais, pois dizem que elimina toxinas físicas e espirituais.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 44,
+    "nome": "Kala-Puka",
+    "estilo": "Sagaz",
+    "descricao": "Se a refeição recuperar 8+ Vigor, receba ESCALAR (1) ou NADAR (1). ◆ Esses monstros parecidos com sapos levam um estilo de vida que mescla vivências aquáticas e arbóreas. Sua carne é suave e irrepreensível, combinando bem com a maioria dos sabores.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 45,
+    "nome": "Wooda Selvagem",
+    "estilo": "Poderoso",
+    "descricao": "Remova (1) Fadigado ou, se a refeição recuperar 8+ Vigor, receba VELOCIDADE. ◆ Wooda fornece lã, laticínios e carne para sociedades em toda a Terra Una. Um único abate pode se transformar em muitas porções.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 46,
+    "nome": "Semente de Prótea-real",
+    "estilo": "Poderoso",
+    "descricao": "Sem efeito adicional. ◆ Próteas-reais têm inflorescências enormes, semelhantes a raios de sol. Tanto óleo de cozinha quanto farinha podem ser feitos a partir de suas sementes versáteis e saborosas.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 47,
+    "nome": "Capim-cebola",
+    "estilo": "Poderoso",
+    "descricao": "Receba (1) Revigorado. ◆ Embora venha em dezenas de variedades, cada uma delas é igualmente persistente. O bulbo tem mais gosto que o longo caule.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 48,
+    "nome": "Malagueta do Vale",
+    "estilo": "Ligeiro",
+    "descricao": "Marcante. Receba (1) Revigorado. ◆ A Malagueta do Vale, ou jao, é entorpecente e picante. Use-a como molho, tempero para ensopados e refogados, ou marinada para pratos frios.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 49,
+    "nome": "Prole-da-rainha",
+    "estilo": "Sagaz",
+    "descricao": "Raro. Receba (1) Ferido ou, se a refeição recuperar 20+ Vigor, (+1) em SAGAZ. ◆ Um zaswang fraco e embrionário. Todos os filhos da Rainha Maka morreram dentro do ovo, mas nem mesmo as bactérias os comeram. Talvez, apenas os ferais consigam cozinhá-los com segurança.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 50,
+    "nome": "Néctar de Taçaflauta",
+    "estilo": "Ligeiro",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba (+1) em EXIBIR ou NÃO-ME-TOQUE (1). ◆ As flores Taçaflauta recebem esse nome devido ao seu formato longo e característico. Elas crescem cercadas de espinhos.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 51,
+    "nome": "Seiva de Espiralávore",
+    "estilo": "Poderoso",
+    "descricao": "Recupere (1) de Durabilidade ou receba RESISTENTE A IMPACTO. ◆ Espiralárvores sangram seiva para protegerem-se- de Dano e do fogo. Se fervida o suficiente, é a base para uma goma de mascar doce",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 52,
+    "nome": "Balsamel",
+    "estilo": "Sagaz",
+    "descricao": "Raro. Se a refeição recuperar 10+ Vigor, remova (1) Ferido. ◆ Um mel claro, de baixa viscosidade e com notáveis propriedades medicinais. A fumaça é um método comum para sedar as abelhas antes de colhê-lo.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 53,
+    "nome": "Raiz-do-lodo",
+    "estilo": "Ligeiro",
+    "descricao": "Receba (1) Envenenado ou, se a refeição recuperar 4+ de Vigor, (1) Descansado. ◆ Um vegetal rico em amido que cresce nas margens do Rio Yhayhe. Muito versátil, embora seja um pouco mais difícil de preparar do que sua prima raiz coxim",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 54,
+    "nome": "Junithan",
+    "estilo": "Preciso",
+    "descricao": "Raro. Receba ELETRORRECEPTIVIDADE. ◆ Junithans semelhantes a enguias aparecem em número tão grande que você pode pescá-los sem medo de afetar a quantidade de pessoas que sobreviverão para se tornarem varithans.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 55,
+    "nome": "Girino de Sposu",
+    "estilo": "Preciso",
+    "descricao": "Raro. Marcante. Receba CORPO QUENTE. ◆ Incrivelmente picante, com tons metálicos. Esses peixes menores às vezes são levados para fora de suas cavernas nas montanhas e para os rios de superfície.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 56,
+    "nome": "Brotos das Cinzas",
+    "estilo": "Ligeiro",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, remova Queimado. ◆ Estas plantas resistentes são as primeiras a crescer novamente após queimadas. Amargos quando crus, mas acres quando cozidos demais, é preciso habilidade para prepará-los corretamente.",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 57,
+    "nome": "",
+    "estilo": "Poderoso",
+    "descricao": "",
+    "tracos": [
+      2
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Asaginga",
+        "descricao": "Receba (1) Fadigado. ◆ Este monstro aviário não voa, é noturno e invasivo. Sua carne é um tanto seca e magra, e muitas vezes deixa as pessoas sonolentas."
+      },
+      "acima_5": {
+        "nome": "Argilafurda",
+        "descricao": "Tempero. Receba RECUO. ◆ Envolva a carne ou os vegetais na argila e asse em fogo baixo. Muitos monstros lambem essa argila para adquirir minerais essenciais."
+      }
+    }
+  },
+  {
+    "id": 58,
+    "nome": "Geleca de Onagung",
+    "estilo": "Ligeiro",
+    "descricao": "Se a refeição recuperar 8+ de Vigor, receba ESCORREGADIO. A maioria dos Onagungs recém-nascidos morre em poucos dias. Monstros selvagens são rápidos em abocanhá-los, então você deve ter pés leves para colhê-los.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 59,
+    "nome": "Raiz Coxim",
+    "estilo": "Poderoso",
+    "descricao": "Receba (1) Descansado. Um tubérculo macio e rico em amido que você pode ferver, amassar, assar ou fritar. Dizem que não há prazer maior do que se deliciar com um prato de Raiz Coxim e depois tirar uma soneca.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 60,
+    "nome": "Luminusgo",
+    "estilo": "Preciso",
+    "descricao": "Receba (1) BIOLUMINESCÊNCIA ou, se a refeição recuperar 4+ de Vigor, CLARÃO. Durante o dia, esse musgo comestível parece normal. À noite ou no subterrâneo, ele brilha com uma suave luz fluorescente.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 61,
+    "nome": "Verme",
+    "estilo": "Preciso",
+    "descricao": "Receba FAMINTO. Os povos Sen não têm um nome mais específico para eles. São simplesmente os vermes — incontáveis, permutáveis e famintos.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 62,
+    "nome": "Sal Grosso de Lakkarakku",
+    "estilo": "Sagaz",
+    "descricao": "Tempero. Sem efeito adicional. O sal extraído das Montanhas Ocas é valorizado por sua tonalidade ametista, a qual compartilha com os cristais que pontilham as cavernas subterrâneas.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 63,
+    "nome": "",
+    "estilo": "Poderoso",
+    "descricao": "",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem_8": {
+      "tem_variacao": true,
+      "abaixo_8": {
+        "nome": "Raiz Coxim",
+        "descricao": "Receba (1) Descansado. ◆ Um tubérculo macio e rico em amido que você pode ferver, amassar, assar ou fritar. Dizem que não há prazer maior do que deliciar-se com um prato de raiz coxim e depois tirar uma soneca."
+      },
+      "acima_8": {
+        "nome": "Vermenídeo",
+        "descricao": "Raro. Receba (+1) em GOLPEAR. ◆ Os maiores vermes passam a vida toda lutando para devorar seus rivais. Seus inúmeros filhotes envolvem a Costa Sen todos os verões."
+      }
+    }
+  },
+  {
+    "id": 64,
+    "nome": "Pingos de Fluido",
+    "estilo": "Preciso",
+    "descricao": "Tempero. Receba EXPANDIR. ◆ Os reis verdes incubaram muitos monstros nessa solução para torná-los gado mais produtivo.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 65,
+    "nome": "Falso Pêssego Che",
+    "estilo": "Ligeiro",
+    "descricao": "Raro. Se a refeição recuperar 10+ de Vigor, remova (1) Ferido. ◆ Gourmets descrevem o sabor como frio e intenso. Mesmo esses pêssegos são considerados formas menores do verdadeiro Pêssego Che, que concede imortalidade.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 66,
+    "nome": "",
+    "estilo": "Poderoso",
+    "descricao": "",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Ameixa Jya",
+        "descricao": "Marcante. Receba (1) Envenenado ou, se a refeição recuperar 8+ de Vigor, VENENO (1). ◆ Se fermentada por tempo suficiente, adiciona um toque alcoólico e ácido à maioria dos molhos, como o vinho de cozinha."
+      },
+      "acima_5": {
+        "nome": "Raiz Coxim",
+        "descricao": "Receba (1) Descansado. ◆ Um tubérculo macio e rico em amido que você pode ferver, amassar, assar ou fritar. Dizem que não há prazer maior do que deliciar-se com um prato de raiz coxim e depois tirar uma soneca."
+      }
+    }
+  },
+  {
+    "id": 67,
+    "nome": "",
+    "estilo": "Sagaz",
+    "descricao": "",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Sal Grosso de Lakkarakku",
+        "descricao": "Tempero. Sem efeito adicional. ◆ O sal extraído das Montanhas Ocas é valorizado por sua tonalidade ametista, que ele compartilha com os cristais que pontilham as cavernas subterrâneas."
+      },
+      "acima_5": {
+        "nome": "Depressal",
+        "descricao": "Tempero. Receba ARMADURA NATURAL ou ROBUSTO. ◆ O sal extraído das profundezas de Lakkarakku tem um sabor muito mais intenso do que os cristais mais próximos da superfície."
+      }
+    }
+  },
+  {
+    "id": 68,
+    "nome": "Folhas de Ervafumo",
+    "estilo": "Sagaz",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba SEDATIVO. ◆ A ervafumo é tipicamente fumada em vez de comida. No entanto, tem um efeito igualmente sonífero quando usada como alimento",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 69,
+    "nome": "Broto de Ervafumo",
+    "estilo": "Sagaz",
+    "descricao": "Se a refeição recuperar 8+ de Vigor, receba INABALÁVEL. ◆ Terroso e crocante, embora tenha um toque que alguns descrevem como herbal e outros descrevem como canábico. É fácil distrair-se enquanto os colhe.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 70,
+    "nome": "Lótus do Yhayhe",
+    "estilo": "Ligeiro",
+    "descricao": "Receba FLUTUANTE. ◆ Os povos Sen comem raízes de lótus em refogados, sopas e saladas. São crocantes e doces, embora algumas pessoas não gostem do fato de ela ter tantos buracos.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 71,
+    "nome": "",
+    "estilo": "Ligeiro",
+    "descricao": "",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Florete da Neve",
+        "descricao": "Sem efeito adicional ◆ Crocante e levemente amargo, semelhante ao brócolis ou à couve-flor. Cozinheiros do Cartel geralmente descartam o caule, mas os moradores locais usam todas as partes da planta igualmente."
+      },
+      "acima_5": {
+        "nome": "Cenoura Olho de Águia",
+        "descricao": "Receba SENTIDOS AGUÇADOS. ◆ Acadêmicos do mundo todo não entendem como as cenouras proporcionam melhor visão. Que aspecto deste vegetal a Lei Una transfere?"
+      }
+    }
+  },
+  {
+    "id": 72,
+    "nome": "Leitesouro",
+    "estilo": "Preciso",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba (+1) em AGARRAR. ◆ Insetos rastejantes cheios de um líquido branco, que se torna bastante pegajoso quando expelido de seus abdômens. Um substituto de laticínios surpreendentemente eficaz.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 73,
+    "nome": "Nevosca",
+    "estilo": "Ligeiro",
+    "descricao": "Raro. Receba Exposto ou, se a refeição recuperar 20+ de Vigor, (+1) em LIGEIRO. ◆ Insetos voadores que emergem para acasalar em alpes congelados e morrem em poucas horas. Suas asas são tão delicadas e complexas quanto flocos de neve.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 74,
+    "nome": "Vagem de metro Lakkarakku",
+    "estilo": "Ligeiro",
+    "descricao": "Receba Expandido. ◆ Crocante e doce, consumido tanto fresco como cozido. É comum fritá-los sem óleo, usando calor intenso para desidratá-los e concentrar o sabor.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 75,
+    "nome": "Wooda Selvagem",
+    "estilo": "Poderoso",
+    "descricao": "Remova (1) Fadigado ou, se a refeição recuperar 8+ de Vigor, receba VELOCIDADE. ◆ Wooda fornece lã, laticínios e carne para sociedades em toda a Terra Una. Um único abate pode se transformar em muitas porções.",
+    "tracos": [
+      3
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 76,
+    "nome": "Cauda de Rakuzar",
+    "estilo": "Ligeiro",
+    "descricao": "Recupera (1) de Durabilidade. O rakuzar comumente deixa cair sua cauda para assustar ou confundir seus predadores. Ela rende boa carne, se você conseguir encontrá-la a tempo.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 77,
+    "nome": "Trigotérreo",
+    "estilo": "Poderoso",
+    "descricao": "Sem efeito adicional. O trigasca semeado no solo produz um cultivo chamado trigotérreo. É prático, mas todos concordam que o sabor não é o mesmo.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 78,
+    "nome": "Votra",
+    "estilo": "Preciso",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba ENXAME. A maioria, mas não todos, dos adultos votras, morre após o acasalamento. No inverno, seus cadáveres caem no chão como neve, alimentando todo o deserto.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 79,
+    "nome": "Frutescama",
+    "estilo": "Preciso",
+    "descricao": "Receba (1) Fadigado. As vagens das Escamárvores crescem em grupos sob as folhas afiadas. Normalmente, são moídas até formar uma farinha seca e desagradável, consumida apenas como último recurso.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 80,
+    "nome": "",
+    "estilo": "Sagaz",
+    "descricao": "",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Palma de Cacto",
+        "descricao": "Se a refeição recuperar 8+ de Vigor, receba NÃO-ME-TOQUE (1). Ácida, mas estranhamente viscosa. Retire cuidadosamente os espinhos e grelhe ou sele em uma frigideira. Use ácido generosamente se não gostar da sensação viscosa na boca."
+      },
+      "acima_5": {
+        "nome": "Asarremo",
+        "descricao": "Raro. Receba CAMUFLAGEM ou VOAR (1). Um monstro lepidóptero que se disfarça pousando nas pontas dos cactos chamigsianos. Tem textura aerada e crocante quando frito."
+      }
+    }
+  },
+  {
+    "id": 81,
+    "nome": "Grilo Sacro",
+    "estilo": "Preciso",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba (+1) em CHAMAR ou REFLEXOS NATURAIS. ◆ Um inseto saltador natural das dunas. Os peregrinos da Canção da Fé usam os sons guturais e sibilantes dos grilos como guias durante suas meditações errantes.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 83,
+    "nome": "Lambari do Deserto",
+    "estilo": "Ligeiro",
+    "descricao": "Raro. Receba HIBERNADOR ou NADAR (1). ◆ Esses peixes extraordinariamente resistentes são tão planos quanto assadeiras. Eles emergem do fundo do lago somente quando há água suficiente para nadar.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 84,
+    "nome": "Sal Esporádico",
+    "estilo": "Ligeiro",
+    "descricao": "Tempero. Receba Exposto. ◆ Não é aconselhável fazer sal a partir do resíduo grosso e sujo deixado para trás quando o lago seca. Mas as inevitáveis impurezas lhe dão um sabor único.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 85,
+    "nome": "Solguejo",
+    "estilo": "Sagaz",
+    "descricao": "Recupere (1) de Durabilidade. ◆ Em vez de se reunirem perto da água para se reproduzir, os solguejos esperam que a água chegue até eles. Sua carne suave combina bem com condimentos.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 86,
+    "nome": "Tutaneterno",
+    "estilo": "Poderoso",
+    "descricao": "Raro. Se a refeição restaurar 10+ de Vigor, remova (1) Ferido. ◆ Alguns ossos aqui não estão petrificados. Os esqueletos mais estranhos continuam a produzir tutano após a morte.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 87,
+    "nome": "Parasita de Casco",
+    "estilo": "Sagaz",
+    "descricao": "Se a refeição restaurar 8+ de Vigor, receba ESCALAR (1) ou (+1) em AGARRAR. ◆ Antes comuns, seu número reduziu junto com os chamigs. Eles não são parasitas obrigatórios, então, com o tempo, podem se adaptar e sobreviver.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 88,
+    "nome": "Estreia do Padeiro",
+    "estilo": "Preciso",
+    "descricao": "Raro. Receba (1) Atordoado ou, se a refeição recuperar 20+ Vigor, (+1) em PRECISO. ◆ Esta planta espinhosa e tolerante à seca produz um caule floral em intervalos extremamente específicos. Apesar da abundância, é difícil cronometrar a colheita corretamente.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 89,
+    "nome": "Insetoíche",
+    "estilo": "Sagaz",
+    "descricao": "Se a refeição recuperar 8+ de Vigor, Receba APOSEMÁTICO . ◆ Insetos que emitem um odor repugnante para espantar predadores. Eles ficam de cabeça para baixo, com o abdômen erguido, como um aviso prévio.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 90,
+    "nome": "Larva de Insetoíche",
+    "estilo": "Poderoso",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba ESCAVAR (1). ◆ Gordo e rosa, se contorce o tempo todo. Ele pode ser assado e comido, embora uma tradição recente tenha começado a selá-lo dentro de garrafas de álcool.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 91,
+    "nome": "Brancajante",
+    "estilo": "Preciso",
+    "descricao": "Remova (1) Fadigado. ◆ Fungo resistente que cobre as paredes e o chão do subterrâneo. Tem um sabor almiscarado único depois de lavado e seco.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 92,
+    "nome": "Raturno Estridente",
+    "estilo": "Sagaz",
+    "descricao": "Receba ECOLOCALIZAÇÃO ou POLINIZADOR. ◆ Um insetívoro pequeno e noturno. Ele usa as asas, que crescem após se alimentar, para buscar néctar ou mais insetos.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 93,
+    "nome": "Noz de Acácia",
+    "estilo": "Preciso",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba PACIÊNCIA . ◆ As vagens de acácia levam vários verões para atingir a maturidade. Seque-as e as abra para colher as sementes, ou simplesmente colete-as onde caírem.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 94,
+    "nome": "",
+    "estilo": "Ligeiro",
+    "descricao": "",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Cauda de Rakuzar",
+        "descricao": "Recupere (1) de Durabilidade. ◆ O rakuzar comumente deixa cair sua cauda para assustar ou confundir seus predadores. Ela rende boa carne, se você conseguir encontrá-la tempo."
+      },
+      "acima_5": {
+        "nome": "Ovo de Wari",
+        "descricao": "Se a refeição recuperar 8+ Vigor, receba (+1) em PROCURAR ou (+1) em ATRAVESSAR. ◆ Os antigos criavam waris semelhantes a pombos como sua principal avicultura, e a população selvagem espalhou-se nos quatro cantos do continente."
+      }
+    }
+  },
+  {
+    "id": 95,
+    "nome": "",
+    "estilo": "Preciso",
+    "descricao": "",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao_8": true,
+      "abaixo_8": {
+        "nome": "Votra",
+        "descricao": "Se a refeição recuperar 4+ de Vigor, receba ENXAME. ◆ A maioria, mas não todos, dos adultos votras, morre após o acasalamento. No inverno, seus cadáveres caem no chão como neve, alimentando todo o deserto."
+      },
+      "acima_8": {
+        "nome": "Ovo Milianos",
+        "descricao": "Raro. Remova Preso ou receba (+1) em ARMAZENAR. ◆ Os moradores locais costumavam cobrir ovos de chamig não fertilizados com argila alcalina e enterrá-los. Eles estão disponíveis gratuitamente, pois muitos foram deixados por amotinados que não podem recuperá-los."
+      }
+    }
+  },
+  {
+    "id": 96,
+    "nome": "",
+    "estilo": "Preciso",
+    "descricao": "",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem_8": {
+      "tem_variacao": true,
+      "abaixo_8": {
+        "nome": "Frutescama",
+        "descricao": "Receba (1) Fadigado. ◆ As vagens das Escamárvores crescem em grupos sob as folhas afiadas. Normalmente, são moídas até formar uma farinha seca e desagradável, consumida apenas como último recurso."
+      },
+      "acima_8": {
+        "nome": "Ovo Milianos",
+        "descricao": "Raro. Remova Preso ou receba (+1) em ARMAZENAR. ◆ Os moradores locais costumavam cobrir ovos de chamig não fertilizados com argila alcalina e enterrá-los. Eles estão disponíveis gratuitamente, pois muitos foram deixados por amotinados que não podem recuperá-los."
+      }
+    }
+  },
+  {
+    "id": 97,
+    "nome": "Wooda Selvagem",
+    "estilo": "Poderoso",
+    "descricao": "Remova (1) Fadigado ou, se a refeição recuperar 8+ de Vigor, receba VELOCIDADE. ◆ Wooda fornece lã, laticínios e carne para sociedades em toda a Terra Una. Um único abate pode se transformar em muitas porções.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 98,
+    "nome": "Gaultéria Desidratada",
+    "estilo": "Sagaz",
+    "descricao": "Tempero. Receba (1) Envenenado ou, se a refeição recuperar 4+ de Vigor, (1) Revigorado. ◆ Gaultéria chamigsianas são amargas demais para comer, mas geralmente são desidratadas e usadas como tempero. Suas propriedades medicinais podem ser prejudiciais se preparadas incorretamente.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 99,
+    "nome": "Néctar de Florarcaica",
+    "estilo": "Preciso",
+    "descricao": "Se a refeição recuperar 4+ de Vigor, receba CHEIRO DE SANGUE ou (+1) em EXIBIR. ◆ Essas flores silvestres aglomeram-se ao redor das bases de espinhos de arkaicaço, regados com sangue. Essa adaptação lhes dá uma janela maior para florescer.",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": false
+    }
+  },
+  {
+    "id": 100,
+    "nome": "",
+    "estilo": "Sagaz",
+    "descricao": "",
+    "tracos": [
+      4
+    ],
+    "variacao_rolagem": {
+      "tem_variacao": true,
+      "abaixo_5": {
+        "nome": "Palma de Cacto",
+        "descricao": "Se a refeição recuperar 8+ de Vigor, receba NÃO-ME-TOQUE (1). ◆ Acre, mas estranhamente viscoso. Retire cuidadosamente os espinhos e grelhe ou sele em uma frigideira. Use ácido generosamente se não gostar da sensação viscosa na boca."
+      },
+      "acima_5": {
+        "nome": "Semente Difusora",
+        "descricao": "Receba VOAR (1) ou (+1) em ATIRAR. ◆ Ervas Difusoras lançam suas sementes com força, para que possam cair e se dispersar pelos ventos do deserto."
+      }
+    }
+  }
+]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilderfeast - Sorteador de Ingredientes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wilderfeast - Sorteador de Ingredientes</h1>
+            <div class="trait-selector">
+                <label for="traco">Selecione o Traço:</label>
+                <select id="traco">
+                    <option value="1">Praia</option>
+                    <option value="2">Arvoredo</option>
+                    <option value="3">Montanha</option>
+                    <option value="4">Deserto</option>
+                    <option value="5">Urbano</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div class="random-all-container">
+                <button id="random-all-button" class="random-all-button">🎲 Randomizar Todos</button>
+            </div>
+            <table class="ingredients-table">
+                <thead>
+                    <tr>
+                        <th>ESTILO</th>
+                        <th>NOME</th>
+                        <th>EFEITO</th>
+                        <th>AÇÃO</th>
+                    </tr>
+                </thead>
+                <tbody id="ingredients-body">
+                    <tr class="style-ligeiro">
+                        <td rowspan="1" class="style-cell">LIGEIRO</td>
+                        <td class="nome-cell" id="ligeiro-nome">-</td>
+                        <td class="efeito-cell" id="ligeiro-efeito">-</td>
+                        <td rowspan="1"><button class="dice-button" data-style="Ligeiro">🎲</button></td>
+                    </tr>
+                    <tr class="style-poderoso">
+                        <td rowspan="1" class="style-cell">PODEROSO</td>
+                        <td class="nome-cell" id="poderoso-nome">-</td>
+                        <td class="efeito-cell" id="poderoso-efeito">-</td>
+                        <td rowspan="1"><button class="dice-button" data-style="Poderoso">🎲</button></td>
+                    </tr>
+                    <tr class="style-preciso">
+                        <td rowspan="1" class="style-cell">PRECISO</td>
+                        <td class="nome-cell" id="preciso-nome">-</td>
+                        <td class="efeito-cell" id="preciso-efeito">-</td>
+                        <td rowspan="1"><button class="dice-button" data-style="Preciso">🎲</button></td>
+                    </tr>
+                    <tr class="style-sagaz">
+                        <td rowspan="1" class="style-cell">SAGAZ</td>
+                        <td class="nome-cell" id="sagaz-nome">-</td>
+                        <td class="efeito-cell" id="sagaz-efeito">-</td>
+                        <td rowspan="1"><button class="dice-button" data-style="Sagaz">🎲</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

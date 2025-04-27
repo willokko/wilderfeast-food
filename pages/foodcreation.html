@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alimentos - Wilderfeast</title>
+    <style>
+        :root {
+            --primary-color: #8b5d33;
+            --secondary-color: #5d8b33;
+            --background-color: #f5f0e6;
+            --text-color: #333;
+            --border-color: #ccc;
+            --highlight-color: #d4a76a;
+            --error-color: #b33a3a;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .form-container {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .list-container {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-item input {
+            margin-right: 5px;
+        }
+        
+        .variation-container {
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--highlight-color);
+        }
+        
+        .export-btn {
+            background-color: var(--secondary-color);
+            margin-top: 20px;
+        }
+        
+        .food-item {
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        
+        .food-item h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .food-item .style {
+            display: inline-block;
+            padding: 3px 8px;
+            background-color: var(--highlight-color);
+            color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .food-item .traits {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .food-item .variation {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+        }
+        
+        .error {
+            color: var(--error-color);
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        .success {
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .optional-field {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+            margin-left: 5px;
+        }
+        
+        .food-id {
+            color: #666;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Alimentos - Wilderfeast</h1>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>Adicionar Novo Alimento</h2>
+            
+            <form id="foodForm">
+                <div class="form-group">
+                    <label for="foodName">Nome do Alimento: <span class="optional-field" id="nameOptional">(opcional com variação)</span></label>
+                    <input type="text" id="foodName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="foodStyle">Estilo:</label>
+                    <select id="foodStyle" required>
+                        <option value="">Selecione um estilo</option>
+                        <option value="Ligeiro">Ligeiro</option>
+                        <option value="Poderoso">Poderoso</option>
+                        <option value="Preciso">Preciso</option>
+                        <option value="Sagaz">Sagaz</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="foodDescription">Descrição: <span class="optional-field" id="descriptionOptional">(opcional com variação)</span></label>
+                    <textarea id="foodDescription"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Traços Associados:</label>
+                    <div class="checkbox-group" id="traitsCheckboxes">
+                        <!-- Traços serão adicionados dinamicamente via JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="hasVariation"> 
+                        Este alimento tem variação baseada na rolagem de dados
+                    </label>
+                </div>
+                
+                <div id="variationContainer" class="variation-container hidden">
+                    <h3>Variação para rolagem abaixo de 5</h3>
+                    <div class="form-group">
+                        <label for="below5Name">Nome:</label>
+                        <input type="text" id="below5Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="below5Description">Descrição:</label>
+                        <textarea id="below5Description"></textarea>
+                    </div>
+                    
+                    <h3>Variação para rolagem 5 ou mais</h3>
+                    <div class="form-group">
+                        <label for="above5Name">Nome:</label>
+                        <input type="text" id="above5Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="above5Description">Descrição:</label>
+                        <textarea id="above5Description"></textarea>
+                    </div>
+                </div>
+                
+                <button type="submit">Adicionar Alimento</button>
+            </form>
+            
+            <button id="exportBtn" class="export-btn">Exportar JSON</button>
+        </div>
+        
+        <div class="list-container">
+            <h2>Alimentos Cadastrados</h2>
+            <div id="foodList">
+                <!-- Alimentos cadastrados serão exibidos aqui -->
+                <p id="emptyMessage">Nenhum alimento cadastrado ainda.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dados dos traços
+        const tracos = [
+            { id: 1, nome: "Praia" },
+            { id: 2, nome: "Arvoredo" },
+            { id: 3, nome: "Montanha" },
+            { id: 4, nome: "Deserto" },
+            { id: 5, nome: "Urbano" }
+        ];
+        
+        // Array para armazenar os alimentos cadastrados
+        let foodItems = [];
+        let nextId = 1; // Contador para IDs únicos
+        
+        // Elementos do DOM
+        const foodForm = document.getElementById('foodForm');
+        const hasVariationCheckbox = document.getElementById('hasVariation');
+        const variationContainer = document.getElementById('variationContainer');
+        const foodList = document.getElementById('foodList');
+        const emptyMessage = document.getElementById('emptyMessage');
+        const exportBtn = document.getElementById('exportBtn');
+        const traitsCheckboxes = document.getElementById('traitsCheckboxes');
+        const nameOptional = document.getElementById('nameOptional');
+        const descriptionOptional = document.getElementById('descriptionOptional');
+        const foodNameInput = document.getElementById('foodName');
+        const foodDescriptionInput = document.getElementById('foodDescription');
+        
+        // Preencher checkboxes de traços
+        tracos.forEach(traco => {
+            const checkboxItem = document.createElement('div');
+            checkboxItem.className = 'checkbox-item';
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.id = `trait-${traco.id}`;
+            checkbox.value = traco.id;
+            
+            const label = document.createElement('label');
+            label.htmlFor = `trait-${traco.id}`;
+            label.textContent = traco.nome;
+            
+            checkboxItem.appendChild(checkbox);
+            checkboxItem.appendChild(label);
+            traitsCheckboxes.appendChild(checkboxItem);
+        });
+        
+        // Mostrar/ocultar campos de variação e atualizar campos opcionais
+        hasVariationCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                variationContainer.classList.remove('hidden');
+                nameOptional.style.display = 'inline';
+                descriptionOptional.style.display = 'inline';
+                foodNameInput.required = false;
+                foodDescriptionInput.required = false;
+            } else {
+                variationContainer.classList.add('hidden');
+                nameOptional.style.display = 'none';
+                descriptionOptional.style.display = 'none';
+                foodNameInput.required = true;
+                foodDescriptionInput.required = true;
+            }
+        });
+        
+        // Inicializar estado dos campos opcionais
+        nameOptional.style.display = 'none';
+        descriptionOptional.style.display = 'none';
+        
+        // Adicionar novo alimento
+        foodForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Obter valores do formulário
+            const name = document.getElementById('foodName').value.trim();
+            const style = document.getElementById('foodStyle').value;
+            const description = document.getElementById('foodDescription').value.trim();
+            const hasVariation = hasVariationCheckbox.checked;
+            
+            // Validar campos obrigatórios
+            if (!style) {
+                alert('Selecione um estilo para o alimento.');
+                return;
+            }
+            
+            if (!hasVariation && (!name || !description)) {
+                alert('Nome e descrição são obrigatórios quando não há variação de rolagem.');
+                return;
+            }
+            
+            // Obter traços selecionados
+            const selectedTraits = [];
+            tracos.forEach(traco => {
+                const checkbox = document.getElementById(`trait-${traco.id}`);
+                if (checkbox && checkbox.checked) {
+                    selectedTraits.push(parseInt(traco.id));
+                }
+            });
+            
+            // Verificar se pelo menos um traço foi selecionado
+            if (selectedTraits.length === 0) {
+                alert('Selecione pelo menos um traço para o alimento.');
+                return;
+            }
+            
+            // Criar objeto de alimento
+            const foodItem = {
+                id: nextId++,
+                nome: name,
+                estilo: style,
+                descricao: description,
+                tracos: selectedTraits,
+                variacao_rolagem: {
+                    tem_variacao: hasVariation
+                }
+            };
+            
+            // Adicionar informações de variação se necessário
+            if (hasVariation) {
+                const below5Name = document.getElementById('below5Name').value.trim();
+                const below5Description = document.getElementById('below5Description').value.trim();
+                const above5Name = document.getElementById('above5Name').value.trim();
+                const above5Description = document.getElementById('above5Description').value.trim();
+                
+                if (!below5Name || !below5Description || !above5Name || !above5Description) {
+                    alert('Preencha todos os campos de variação.');
+                    return;
+                }
+                
+                foodItem.variacao_rolagem.abaixo_5 = {
+                    nome: below5Name,
+                    descricao: below5Description
+                };
+                
+                foodItem.variacao_rolagem.acima_5 = {
+                    nome: above5Name,
+                    descricao: above5Description
+                };
+            }
+            
+            // Adicionar ao array de alimentos
+            foodItems.push(foodItem);
+            
+            // Atualizar a lista de alimentos
+            updateFoodList();
+            
+            // Removi a limpeza do formulário (foodForm.reset()) e o alert
+        });
+        
+        // Atualizar a lista de alimentos exibida
+        function updateFoodList() {
+            // Limpar lista atual
+            foodList.innerHTML = '';
+            
+            if (foodItems.length === 0) {
+                foodList.innerHTML = '<p id="emptyMessage">Nenhum alimento cadastrado ainda.</p>';
+                return;
+            }
+            
+            // Adicionar cada alimento à lista
+            foodItems.forEach((food, index) => {
+                const foodElement = document.createElement('div');
+                foodElement.className = 'food-item';
+                
+                // Obter nomes dos traços
+                const traitNames = food.tracos.map(id => {
+                    const trait = tracos.find(t => t.id === id);
+                    return trait ? trait.nome : '';
+                }).filter(name => name).join(', ');
+                
+                let foodHtml = '';
+                
+                if (food.variacao_rolagem.tem_variacao) {
+                    // Para alimentos com variação
+                    foodHtml += `
+                        <h3>ID: ${food.id} - ${food.nome || 'Alimento com variação'}</h3>
+                        <span class="style">${food.estilo}</span>
+                    `;
+                    
+                    if (food.nome || food.descricao) {
+                        foodHtml += `
+                            <div class="base-info">
+                                ${food.nome ? `<p><strong>Nome base:</strong> ${food.nome}</p>` : ''}
+                                ${food.descricao ? `<p><strong>Descrição base:</strong> ${food.descricao}</p>` : ''}
+                            </div>
+                        `;
+                    }
+                    
+                    foodHtml += `
+                        <div class="traits"><strong>Traços:</strong> ${traitNames}</div>
+                        <div class="variation">
+                            <h4>Variação para rolagem abaixo de 5:</h4>
+                            <p><strong>${food.variacao_rolagem.abaixo_5.nome}</strong></p>
+                            <p>${food.variacao_rolagem.abaixo_5.descricao}</p>
+                            
+                            <h4>Variação para rolagem 5 ou mais:</h4>
+                            <p><strong>${food.variacao_rolagem.acima_5.nome}</strong></p>
+                            <p>${food.variacao_rolagem.acima_5.descricao}</p>
+                        </div>
+                    `;
+                } else {
+                    // Para alimentos sem variação
+                    foodHtml += `
+                        <h3>ID: ${food.id} - ${food.nome}</h3>
+                        <span class="style">${food.estilo}</span>
+                        <p>${food.descricao}</p>
+                        <div class="traits"><strong>Traços:</strong> ${traitNames}</div>
+                    `;
+                }
+                
+                foodHtml += `
+                    <button onclick="removeFood(${index})">Remover</button>
+                `;
+                
+                foodElement.innerHTML = foodHtml;
+                foodList.appendChild(foodElement);
+            });
+        }
+        
+        // Remover alimento da lista
+        window.removeFood = function(index) {
+            if (confirm('Tem certeza que deseja remover este alimento?')) {
+                foodItems.splice(index, 1);
+                updateFoodList();
+            }
+        };
+        
+        // Exportar JSON
+        exportBtn.addEventListener('click', function() {
+            if (foodItems.length === 0) {
+                alert('Adicione pelo menos um alimento antes de exportar.');
+                return;
+            }
+            
+            const jsonData = JSON.stringify(foodItems, null, 2);
+            const blob = new Blob([jsonData], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'alimentos_wilderfeast.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+        // Adicionar um alimento de exemplo para teste
+        function adicionarAlimentoExemplo() {
+            const alimento = {
+                id: nextId++,
+                nome: "", // Campo opcional quando tem variação
+                estilo: "Sagaz",
+                descricao: "", // Campo opcional quando tem variação
+                tracos: [3, 7],
+                variacao_rolagem: {
+                    tem_variacao: true,
+                    abaixo_5: {
+                        nome: "Palma de Cacto",
+                        descricao: "Se a refeição recuperar 8+ de Vigor, receba NÃO-ME-TOQUE (1). Acre, mas estranhamente viscoso. Retire cuidadosamente os espinhos e grelhe ou sele em uma frigideira."
+                    },
+                    acima_5: {
+                        nome: "Semente Difusora",
+                        descricao: "Receba VOAR (1) ou (+1) em ATIRAR. Ervas Difusoras lançam suas sementes com força, para que possam cair e se dispersar pelos ventos do deserto."
+                    }
+                }
+            };
+            
+            foodItems.push(alimento);
+            updateFoodList();
+        }
+
+        // Botão para adicionar alimento de exemplo (apenas para teste)
+        const testBtn = document.createElement('button');
+        testBtn.textContent = 'Adicionar Exemplo';
+        testBtn.style.marginTop = '10px';
+        testBtn.style.marginLeft = '10px';
+        testBtn.style.backgroundColor = '#666';
+        testBtn.addEventListener('click', adicionarAlimentoExemplo);
+        document.querySelector('.form-container').appendChild(testBtn);
+    </script>
+</body>
+</html>
