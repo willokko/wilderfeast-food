@@ -1219,8 +1219,8 @@
     "tracos": [
       4
     ],
-    "variacao_rolagem": {
-      "tem_variacao_8": true,
+    "variacao_rolagem_8": {
+      "tem_variacao": true,
       "abaixo_8": {
         "nome": "Votra",
         "descricao": "Se a refeição recuperar 4+ de Vigor, receba ENXAME. ◆ A maioria, mas não todos, dos adultos votras, morre após o acasalamento. No inverno, seus cadáveres caem no chão como neve, alimentando todo o deserto."
