@@ -1,5 +1,11 @@
 // Carrega os dados do JSON
 let ingredientes = [];
+let ultimosIngredientes = {
+    'Ligeiro': null,
+    'Poderoso': null,
+    'Preciso': null,
+    'Sagaz': null
+};
 
 // Função para carregar os dados do JSON
 async function carregarIngredientes() {
@@ -24,6 +30,14 @@ function filtrarIngredientes(traco, estilo) {
     );
 }
 
+// Função para adicionar efeito de highlight
+function adicionarHighlight(row) {
+    row.classList.add('highlight');
+    setTimeout(() => {
+        row.classList.remove('highlight');
+    }, 1000);
+}
+
 // Função para atualizar a tabela com o ingrediente sorteado
 function atualizarTabela(estilo, ingrediente) {
     const estiloLower = estilo.toLowerCase();
@@ -44,6 +58,9 @@ function atualizarTabela(estilo, ingrediente) {
         return;
     }
 
+    // Adiciona efeito de highlight
+    adicionarHighlight(row);
+
     // Verifica se tem algum tipo de variação
     const temVariacao = ingrediente.variacao_rolagem?.tem_variacao || ingrediente.variacao_rolagem_8?.tem_variacao;
 
@@ -54,12 +71,8 @@ function atualizarTabela(estilo, ingrediente) {
 
         let primeiraLinha, segundaLinha;
         
-        // Debug: Verifica a estrutura do ingrediente
-        console.log('Ingrediente com variação:', ingrediente);
-        
         // Verifica qual tipo de variação usar
         if (ingrediente.variacao_rolagem?.tem_variacao) {
-            // Variação padrão (≤4/≥5)
             primeiraLinha = {
                 prefixo: '[A] ≤ 4',
                 nome: ingrediente.variacao_rolagem.abaixo_5.nome,
@@ -71,10 +84,6 @@ function atualizarTabela(estilo, ingrediente) {
                 descricao: ingrediente.variacao_rolagem.acima_5.descricao
             };
         } else if (ingrediente.variacao_rolagem_8?.tem_variacao) {
-            // Debug: Verifica a estrutura da variação_rolagem_8
-            console.log('Variação 8:', ingrediente.variacao_rolagem_8);
-            
-            // Variação 8 (≤7/≥8)
             primeiraLinha = {
                 prefixo: '[A] ≤ 7',
                 nome: ingrediente.variacao_rolagem_8.abaixo_8?.nome || ingrediente.nome,
@@ -85,10 +94,6 @@ function atualizarTabela(estilo, ingrediente) {
                 nome: ingrediente.variacao_rolagem_8.acima_8?.nome || '',
                 descricao: ingrediente.variacao_rolagem_8.acima_8?.descricao || ''
             };
-
-            // Debug: Verifica os valores formatados
-            console.log('Primeira linha:', primeiraLinha);
-            console.log('Segunda linha:', segundaLinha);
         }
 
         // Atualiza primeira linha
@@ -108,6 +113,9 @@ function atualizarTabela(estilo, ingrediente) {
 
         // Insere a nova linha após a linha atual
         row.after(newRow);
+        
+        // Adiciona highlight na nova linha também
+        adicionarHighlight(newRow);
     } else {
         // Caso não tenha variação, mostra apenas uma linha
         styleCell.rowSpan = "1";
@@ -127,11 +135,23 @@ function sortearIngrediente(estilo) {
         return;
     }
 
-    const indiceAleatorio = Math.floor(Math.random() * ingredientesFiltrados.length);
-    const ingredienteSorteado = ingredientesFiltrados[indiceAleatorio];
-    
-    // Debug: Verifica o ingrediente sorteado
-    console.log('Ingrediente sorteado:', ingredienteSorteado);
+    // Tenta até 3 vezes para evitar repetição do último ingrediente
+    let tentativas = 0;
+    let indiceAleatorio;
+    let ingredienteSorteado;
+
+    do {
+        indiceAleatorio = Math.floor(Math.random() * ingredientesFiltrados.length);
+        ingredienteSorteado = ingredientesFiltrados[indiceAleatorio];
+        tentativas++;
+    } while (
+        tentativas < 3 && 
+        ultimosIngredientes[estilo] && 
+        ingredienteSorteado.id === ultimosIngredientes[estilo].id
+    );
+
+    // Atualiza o último ingrediente sorteado
+    ultimosIngredientes[estilo] = ingredienteSorteado;
     
     atualizarTabela(estilo, ingredienteSorteado);
 }
