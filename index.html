@@ -11,7 +11,7 @@
         <header>
             <h1>Wilderfeast - Sorteador de Ingredientes</h1>
             <div class="trait-selector">
-                <label for="traco">Selecione o Traço:</label>
+                <label for="traco">Selecione a região:</label>
                 <select id="traco">
                     <option value="1">Praia</option>
                     <option value="2">Arvoredo</option>
@@ -24,7 +24,14 @@
 
         <main>
             <div class="random-all-container">
-                <button id="random-all-button" class="random-all-button">🎲 Randomizar Todos</button>
+                <button id="random-all-button" class="random-all-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <path d="M12 22v-6"></path>
+                        <path d="M12 8V2"></path>
+                    </svg>
+                    Randomizar Todos
+                </button>
             </div>
             <table class="ingredients-table">
                 <thead>
@@ -40,25 +47,65 @@
                         <td rowspan="1" class="style-cell">LIGEIRO</td>
                         <td class="nome-cell" id="ligeiro-nome">-</td>
                         <td class="efeito-cell" id="ligeiro-efeito">-</td>
-                        <td rowspan="1"><button class="dice-button" data-style="Ligeiro">🎲</button></td>
+                        <td rowspan="1">
+                            <button class="dice-button" data-style="Ligeiro">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="15.5" r="1.5"></circle>
+                                    <circle cx="8.5" cy="15.5" r="1.5"></circle>
+                                </svg>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="style-poderoso">
                         <td rowspan="1" class="style-cell">PODEROSO</td>
                         <td class="nome-cell" id="poderoso-nome">-</td>
                         <td class="efeito-cell" id="poderoso-efeito">-</td>
-                        <td rowspan="1"><button class="dice-button" data-style="Poderoso">🎲</button></td>
+                        <td rowspan="1">
+                            <button class="dice-button" data-style="Poderoso">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="15.5" r="1.5"></circle>
+                                    <circle cx="8.5" cy="15.5" r="1.5"></circle>
+                                </svg>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="style-preciso">
                         <td rowspan="1" class="style-cell">PRECISO</td>
                         <td class="nome-cell" id="preciso-nome">-</td>
                         <td class="efeito-cell" id="preciso-efeito">-</td>
-                        <td rowspan="1"><button class="dice-button" data-style="Preciso">🎲</button></td>
+                        <td rowspan="1">
+                            <button class="dice-button" data-style="Preciso">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="15.5" r="1.5"></circle>
+                                    <circle cx="8.5" cy="15.5" r="1.5"></circle>
+                                </svg>
+                            </button>
+                        </td>
                     </tr>
                     <tr class="style-sagaz">
                         <td rowspan="1" class="style-cell">SAGAZ</td>
                         <td class="nome-cell" id="sagaz-nome">-</td>
                         <td class="efeito-cell" id="sagaz-efeito">-</td>
-                        <td rowspan="1"><button class="dice-button" data-style="Sagaz">🎲</button></td>
+                        <td rowspan="1">
+                            <button class="dice-button" data-style="Sagaz">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="8.5" r="1.5"></circle>
+                                    <circle cx="15.5" cy="15.5" r="1.5"></circle>
+                                    <circle cx="8.5" cy="15.5" r="1.5"></circle>
+                                </svg>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
